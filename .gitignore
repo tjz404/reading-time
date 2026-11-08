@@ -1,0 +1,49 @@
+node_modules/
+dist/
+.env*
+!.env.example
+output/
+*.log
+
+# Local design history, browser captures and agent working files.
+backups/
+.playwright-cli/
+.impeccable/
+.agents/
+.codex/
+playwright-report/
+test-results/
+blob-report/
+
+# Personal reading exports and local datasets.
+reports/
+exports/
+private/
+.local/
+reading-time-*.json
+weread-report-data.json
+*.har
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+
+# Credentials and browser authentication state.
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+storage-state*.json
+storageState*.json
+auth-state*.json
+
+# Editor and operating-system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
