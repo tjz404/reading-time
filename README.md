@@ -168,6 +168,19 @@ npm start
 
 服务仅监听本机 `127.0.0.1`，当前面向个人本地使用。若自行改造为公开服务，需要另外实现身份验证、请求限流、出口控制与 HTTPS。
 
+### GitHub Pages 演示
+
+仓库会通过 GitHub Actions 自动发布无后端的合成数据演示版，不需要 API Key。首次使用时，在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中将 **Source** 设为 **GitHub Actions**。之后推送到 `main` 分支即可自动构建和发布；Actions 完成后，演示地址为 `https://tjz404.github.io/reading-time/`。
+
+演示版打开即显示完整合成报告，可浏览各个分析页面及预置的四种 AI 解读；不会连接微信读书，也不会调用模型。报告与解读数据由浏览器本地生成。完整功能仍可按上文方式在本地运行。
+
+本地预览演示构建：
+
+```sh
+npm run build:demo
+npm run preview:demo
+```
+
 ## 项目结构
 
 ```text

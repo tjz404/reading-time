@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch server.ts",
+    "dev:demo": "vite --mode demo --host 127.0.0.1",
+    "build:demo": "tsc --noEmit && vite build --mode demo",
+    "preview:demo": "vite preview --host 127.0.0.1",
     "build": "tsc --noEmit && vite build && esbuild server.ts --bundle --platform=node --format=esm --packages=external --outfile=dist/server.js",
     "start": "node dist/server.js",
     "check": "tsc --noEmit",
